@@ -8,7 +8,7 @@ module.exports={
                 res.status(500).send("Error reteriving users");
             }
             else{
-                res.join
+                res.json(results);
             }
         })
     }
