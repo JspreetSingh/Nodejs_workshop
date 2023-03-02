@@ -1,14 +1,11 @@
 const express = require("express");
 const app = express();
-const useRoutes=require("../routes/useRoutes")
+const useRoutes=require("./routes/useRoutes")
 app.use(express.json());
 const port = 3002;
 
 app.use("/users",useRoutes);
 
-app.get("/", (req, res) => {
-    res.send({ hello: "world from get api endpoint" });
-});
 // app.post("/", (req, res) => {
 //     let a = parseInt(req.query.a);
 //     let b = parseInt(req.query.b);
